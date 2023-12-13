@@ -57,8 +57,10 @@ final_www_path="/var/www/$app"
 data_path="/home/yunohost.app/matrix-$app"
 
 if [[ "$server_name" == "$default_domain_value" ]]; then
-    server_name=$domain    
+    server_name=$domain
 fi
+
+adduser --system --group $app
 
 #=================================================
 # CHECK IF THE APP CAN BE INSTALLED WITH THESE ARGS
