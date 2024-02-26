@@ -229,3 +229,13 @@ services = ["matrix-__APP__"]
             yes = "true"
             no = "false"
             help = "This defaults to True, otherwise VoIP will be unreliable for guests. However, it does introduce a slight security risk as it allows users to connect to arbitrary endpoints without having first signed up for a valid account (e.g. by passing a CAPTCHA)."
+
+    [advanced.security]
+    name = "Security"
+
+            [advanced.security.enable_dtls_for_audio_video_turn_call]
+            ask = "Enable TLS/DTLS on Audio/Video coll"
+            type = "boolean"
+            yes = "true"
+            no = "false"
+            help = "Enabling TLS/DTLS is really recommanded but it could bring some issues depending of the server certificate. There are some known issues with let's encrypt (https://github.com/element-hq/element-android/issues/1533), so if you have issues it could be better to disable this feature."

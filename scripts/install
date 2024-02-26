@@ -44,6 +44,7 @@ enable_group_creation="true"
 push_include_content="true"
 enable_3pid_lookup=false
 turn_allow_guests=false
+enable_dtls_for_audio_video_turn_call=true
 
 if [ "$is_free_registration" -eq 0 ]
 then
@@ -93,6 +94,7 @@ ynh_app_setting_set --app=$app --key=enable_registration --value=$enable_registr
 ynh_app_setting_set --app=$app --key=turn_allow_guests --value=$turn_allow_guests
 ynh_app_setting_set --app=$app --key=password_enabled --value=$password_enabled
 ynh_app_setting_set --app=$app --key=enable_3pid_lookup --value=$enable_3pid_lookup
+ynh_app_setting_set --app=$app --key=enable_dtls_for_audio_video_turn_call --value=$enable_dtls_for_audio_video_turn_call
 
 #=================================================
 # STANDARD MODIFICATIONS
