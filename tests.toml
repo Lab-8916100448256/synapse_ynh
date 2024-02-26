@@ -7,3 +7,5 @@ test_format = 1.0
     test_upgrade_from.b3bacec606f25c7f69de44da9e9e7eac405810c7.name = "Post app user creation"
 
     test_upgrade_from.10bff828970ee034812a1114bedb3e7740517ad2.name = "Before packaging v2"
+
+    test_upgrade_from.214c337b35d34fbdb1ad28324e7c45437e7cae48.name = "Before Matrix v2 implementation"
